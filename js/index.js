@@ -1,9 +1,13 @@
 let myTable = new TableDrag({
 	tableContainer:"test",
-	columnHeaders:["column 1","column2"],
+	columnHeaders:{
+		content:["column1","column2","column3"],
+		classes:["test1","test2"]
+	},
 	rowContent:{
-		column1:["row 1 column 1","row 2 column 1"],
-		column2:["row 1 column 2","row 2 column 2"],
-		column3:["row 1 column 3","row 2 column 3"],
+		row1:["row 1 column 1","row 1 column 2","row 1 column 3"],
+		row2:["row 2 column 1","row 2 column 2","row 2 column 3"],
+		row3:["row 3 column 1","row 3 column 2",,"row 3 column 3"],
+		classes:["test1","test2","test3"]
 	}
 });
